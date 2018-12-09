@@ -1,0 +1,16 @@
+<div class="container">
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>Power Available?</th>
+      <th>Date/Time</th>
+    </tr>
+    <tr *ngFor="let heartbeat of heartbeats">
+      <td>
+        {{heartbeat.powerAvailable}}
+      </td>
+      <td>
+        {{heartbeat.hbDate}}
+      </td>
+    </tr>
+  </table>
+</div>
